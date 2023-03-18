@@ -6,7 +6,7 @@ Modules Include: -Product Manager -Table Manager -Front Service Manager
 
 Every phase of the Springboot CRUD project works like a charm.
 
-## Team
+## Team:
  Frank James & Nicholas DiCicco
  
  ## SpringBoot Dashboard:
