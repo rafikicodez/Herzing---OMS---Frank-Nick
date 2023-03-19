@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Table Service Manager</title>
+<link th:href = "@{/css/main.css}" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+	integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+	crossorigin="anonymous">
+</head>
+<body>
+<div class="container my-2">
+	<h1>Table Service Manager</h1>
+	<hr>
+	<h2>Add Table Service</h2>
+	<br/>
+	<a th:href="@{/}" class="btn btn-outline-secondary btn-md mb-3">Dashboard</a>
+	<br/>
+	<a th:href="@{/table}" class="btn btn-outline-primary btn-lg mb-4">Table Service Manager</a>
+	<br/>
+	<form action="#" th:action="@{/saveTable}" th:object="${table_service}" method="post">
+		<div class="form-group">
+			<label for="num">Table Number</label>
+			<input id="num" type="number" th:field="*{number}" class="form-control mb-4 col-2" required="required"/>
+		</div>
+		<div class="form-group">
+			<label for="cap">Table Capacity</label>
+			<input id="cap" type="number" th:field="*{capacity}" class="form-control mb-4 col-2" required="required"/>
+		</div>
+		<div class="form-check">
+			<label class="form-check-label col-2" for="isOcc">
+				<input id="isOcc" type="checkbox" th:field="*{isOccupied}" class="form-check-input mb-4 col-1"/>isOccupied
+			</label>
+		</div>
+		<br/><br/>
+		<button type="submit" class="btn btn-success col-2">Save Table Service</button>
+	</form>
+	
+	
+</div>
+</body>
+</html>

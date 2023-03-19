@@ -1,0 +1,39 @@
+h1 {
+	background-color: mintcream;
+	border-radius: 5px;
+	color: firebrick;
+	font-family: sans-serif;
+	font-size: 38px;
+	text-transform: uppercase;
+}
+
+table {
+	background-color: mintcream;
+	width: 60%;
+}
+th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px 5px;
+  text-align: center;
+}
+th {
+  text-align: center;
+}
+.createNew_link {
+  background-color: firebrick;
+  border-radius: 10px;
+  padding: 20px 5px;
+  text-align: center;
+  width: 100%;
+}
+
+#center_group {
+	text-align: center;
+}
+#create_new_link {
+	color: mintcream;
+	font-size: 24px;
+	font-weight: bold;
+}
+

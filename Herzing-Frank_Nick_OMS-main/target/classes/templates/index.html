@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Order Management System</title>
+<link th:href = "@{/css/main.css}" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+	integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+	crossorigin="anonymous">
+</head>
+<body>
+<div class="container my-2">
+	<h1>Gus's Order Management System</h1>
+	<hr>
+	<div>
+		<a th:href="@{/products}" class="btn btn-info btn-block mb-4">Product Manager</a>
+		<a th:href="@{/front}" class="btn btn-info btn-block mb-4">Front Service Manager</a>
+		<a th:href="@{/table}" class="btn btn-info btn-block mb-4">Table Service Manager</a>
+		<br/>
+	</div>
+</div>
+</body>
+</html>
